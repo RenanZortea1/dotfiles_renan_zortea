@@ -74,6 +74,4 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnos
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
--- Llama Copilot key mappings
-vim.keymap.set("n", "<leader>cc", ":LlamaCopilotComplet<CR>", { noremap = true, silent = true }) -- trigger completion
-vim.keymap.set("n", "<leader>cy", ":LlamaCopilotAccept<CR>", { noremap = true, silent = true }) -- accept suggestion
+vim.keymap.set("n", "<leader>e", "<cmd>Explore<CR>", opts)
